@@ -1,6 +1,11 @@
+<center><img src="https://i.imgur.com/UBVHObU.png" width="400"></center>
+
+<br/>
+
 # Salam Practice Game 🕊️
-A web-based game built with React and Vite to help Muslims practice and remember who they can give **Salam** to.   
-The game is designed to be engaging and educational, making it easier to understand Islamic etiquettes related to greetings.
+A web-based game built with React and Vite to help Muslims practice and remember who they can give **Salam** to.  
+
+The game is designed to be engaging and educational; etiquettes related to greetings.
 
 ## 🚀 Features
 - 🎮 **Interactive Gameplay** – Test and improve your knowledge on Salam etiquette.
