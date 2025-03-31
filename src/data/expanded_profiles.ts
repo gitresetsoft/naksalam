@@ -1,145 +1,65 @@
 import { Profile } from "../types/profile";
+
 const group1 = [
   {
-    id: "1",
-    name: "Ahmad",
-    age: 50,
-    dalil: [
+    "id": "1",
+    "name": "Ahmad",
+    "age": 50,
+    "dalil": [
       {
-        maleUser: "Al-Isra:23 – This shows that greeting one's father with Salam is encouraged and does not break wudu.",
-        femaleUser: "Al-Isra:23 – This shows that greeting one's father with Salam is encouraged and does not break wudu."
+        "maleUser": "Al-Isra:23 – This shows that greeting one's father with Salam is encouraged and does not break wudu.",
+        "femaleUser": "Al-Isra:23 – This shows that greeting one's father with Salam is encouraged and does not break wudu."
       }
     ],
-    interests: ["Male", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "interests": ["Male", "Islam", "Baligh"],
+    "imageUrl": "https://images.unsplash.com/photo-1560807707-8cc77767d783?fit=crop&w=800&q=80",
+    "detailImageUrls": [
+      "https://images.unsplash.com/photo-1560807707-8cc77767d783?fit=crop&w=800&q=80"
     ],
-    hint: "dummy",
-    relationship: "Father"
+    "hint": "Head of family",
+    "relationship": "Father"
   },
   {
-    id: "2",
-    name: "Fatimah",
-    age: 48,
-    dalil: "A mother has the highest respect. (Hadith: Bukhari 5971)",
-    interests: ["Female", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "id": "2",
+    "name": "Fatimah",
+    "age": 48,
+    "dalil": "A mother has the highest respect. (Hadith: Bukhari 5971)",
+    "interests": ["Female", "Islam", "Baligh"],
+    "imageUrl": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fit=crop&w=800&q=80",
+    "detailImageUrls": [
+      "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fit=crop&w=800&q=80"
     ],
-    hint: "dummy",
-    relationship: "Mother"
+    "hint": "Nurturing caregiver",
+    "relationship": "Mother"
   },
   {
-    id: "3",
-    name: "Ali",
-    age: 25,
-    dalil: "Siblings are part of the close family.",
-    interests: ["Male", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "id": "3",
+    "name": "Ali",
+    "age": 25,
+    "dalil": "Siblings are part of the close family.",
+    "interests": ["Male", "Islam", "Baligh"],
+    "imageUrl": "https://images.unsplash.com/photo-1604076913837-9e9c5d0c6378?fit=crop&w=800&q=80",
+    "detailImageUrls": [
+      "https://images.unsplash.com/photo-1604076913837-9e9c5d0c6378?fit=crop&w=800&q=80"
     ],
-    hint: "dummy",
-    relationship: "Brother"
+    "hint": "Brotherly bond",
+    "relationship": "Brother"
   },
   {
-    id: "4",
-    name: "Aminah",
-    age: 23,
-    dalil: "Sisters are mahram.",
-    interests: ["Female", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "id": "4",
+    "name": "Aminah",
+    "age": 23,
+    "dalil": "Sisters are mahram.",
+    "interests": ["Female", "Islam", "Baligh"],
+    "imageUrl": "https://images.unsplash.com/photo-1621882358510-c300de3f2c35?fit=crop&w=800&q=80",
+    "detailImageUrls": [
+      "https://images.unsplash.com/photo-1621882358510-c300de3f2c35?fit=crop&w=800&q=80"
     ],
-    hint: "dummy",
-    relationship: "Sister"
-  },
-  {
-    id: "5",
-    name: "Ibrahim",
-    age: 60,
-    dalil: "Grandparents are respected elders.",
-    interests: ["Male", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    ],
-    hint: "dummy",
-    relationship: "Grandfather"
-  },
-  {
-    id: "6",
-    name: "Zainab",
-    age: 58,
-    dalil: "Grandmothers hold wisdom.",
-    interests: ["Female", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    ],
-    hint: "dummy",
-    relationship: "Grandmother"
-  },
-  {
-    id: "7",
-    name: "Khalid",
-    age: 18,
-    dalil: "Baligh children follow adult rulings.",
-    interests: ["Male", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    ],
-    hint: "dummy",
-    relationship: "Son"
-  },
-  {
-    id: "8",
-    name: "Siti",
-    age: 16,
-    dalil: "Daughters have special protection.",
-    interests: ["Female", "Islam", "Not Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    ],
-    hint: "dummy",
-    relationship: "Daughter"
-  },
-  {
-    id: "9",
-    name: "Hafiz",
-    age: 12,
-    dalil: "Pre-baligh children are treated differently.",
-    interests: ["Male", "Islam", "Not Baligh"],
-    imageUrl: "https://source.unsplash.com/random/200x200?face",
-    detailImageUrls: ["https://source.unsplash.com/random/300x300?face"],
-    hint: "dummy",
-    relationship: "Son"
-  },
-  {
-    id: "10",
-    name: "Alya",
-    age: 10,
-    dalil: "Young girls do not have adult rulings.",
-    interests: ["Female", "Islam", "Not Baligh"],
-    imageUrl: "https://source.unsplash.com/random/200x200?face",
-    detailImageUrls: ["https://source.unsplash.com/random/300x300?face"],
-    hint: "dummy",
-    relationship: "Daughter"
+    "hint": "Sisterly love",
+    "relationship": "Sister"
   }
-];
+]
+
 
 const group2 = [
   {
@@ -153,12 +73,12 @@ const group2 = [
       }
     ],
     interests: ["Male", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?fit=crop&w=800&q=80",
     detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "https://images.unsplash.com/photo-1552058544-f2b08422138a?fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548449112-96a38a643324?fit=crop&w=800&q=80"
     ],
-    hint: "dummy",
+    hint: "From father's side",
     relationship: "Cousin"
   },
   {
@@ -245,12 +165,12 @@ const group3 = [
       }
     ],
     interests: ["Male", "Islam", "Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1578635073897-3809598b775f?fit=crop&w=800&q=80",
     detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80"
     ],
-    hint: "dummy",
+    hint: "Extended family elder",
     relationship: "Father's Cousin"
   },
   {
@@ -397,12 +317,12 @@ const group4 = [
       }
     ],
     interests: ["Male", "Hindu", "Non-Baligh"],
-    imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=800&q=80",
     detailImageUrls: [
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
-      "https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?fit=crop&w=800&q=80"
     ],
-    hint: "dummy",
+    hint: "Known from work",
     relationship: "Friend"
   },
   {

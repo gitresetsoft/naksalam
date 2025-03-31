@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import CardDeck from '@/components/CardDeck';
 import ScoreBoard from '@/components/ScoreBoard';
 import { Profile, SwipeAction, Score } from '@/types/profile';
-import profiles from '@/data/profiles';
+import { group1, group2, group3, group4 } from '@/data/expanded_profiles';
 import { toast } from "sonner";
 import { HelpCircle, X, CheckCheck } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -12,10 +11,14 @@ import { Button } from "@/components/ui/button";
 import UserInfo from '@/components/UserInfo'; 
 import Navbar from '@/components/Navbar';
 
+// const profiles = [...group1, ...group2, ...group3, ...group4];
+const profiles = group1; //? test purposes
+
 // Add isFamily flag to some profiles randomly
 const enhancedProfiles = profiles.map(profile => ({
   ...profile,
-  isFamily: Math.random() > 0.7 // 30% chance of being family
+  isFamily: Math.random() > 0.7,
+  dalil: Array.isArray(profile.dalil) ? profile.dalil[0] : profile.dalil
 }));
 
 const initialScore: Score = {
