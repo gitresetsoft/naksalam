@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Profile, Direction } from '../types/profile';
 import { cn } from '@/lib/utils';
@@ -85,17 +84,17 @@ const Card: React.FC<CardProps> = ({
           <div className="animate-fade-in">
             <h2 className="text-3xl font-bold text-white flex items-center">
               {profile.name}, {profile.age}
-              {profile.compatibility && (
+              {profile.relationship && (
                 <span className="ml-2 text-sm px-2 py-1 bg-accent/90 text-white rounded-full">
-                  {profile.compatibility}% Match
+                  {profile.relationship}
                 </span>
               )}
             </h2>
             
             <p className="text-white/90 mt-1 flex items-center text-sm">
-              <span className="mr-2">{profile.location}</span>
+              <span className="mr-2">{profile.location || 'No location'}</span>
               <span className="w-1 h-1 rounded-full bg-white/80"></span>
-              <span className="ml-2">{profile.distance} miles away</span>
+              <span className="ml-2">{profile.hint}</span>
             </p>
             
             <div className="mt-3 flex flex-wrap gap-2">
@@ -115,7 +114,7 @@ const Card: React.FC<CardProps> = ({
             </div>
             
             <p className="text-white/80 mt-3 text-sm line-clamp-2">
-              {profile.bio}
+              {typeof profile.dalil === 'object' ? profile.dalil.maleUser : profile.dalil}
             </p>
           </div>
         </div>
