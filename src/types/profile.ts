@@ -1,16 +1,24 @@
+export interface Dalil {
+  maleUser?: string;
+  femaleUser?: string;
+}
 
 export interface Profile {
   id: string;
   name: string;
   age: number;
-  location: string;
-  distance: number;
-  bio: string;
+  dalil?: Dalil | string | undefined;
   interests: string[];
   imageUrl: string;
-  detailImageUrls?: string[];
+  detailImageUrls: string[];
+  hint?: string;
+  relationship?: string;
+  
+  //legacy
+  location?: string;
+  distance?: number;
+  bio?: string;
   compatibility?: number;
-  isFamily?: boolean;
 }
 
 export type Direction = 'left' | 'right' | 'up' | 'down';
