@@ -11,8 +11,8 @@ import { Button } from "@/components/ui/button";
 import UserInfo from '@/components/UserInfo'; 
 import Navbar from '@/components/Navbar';
 
-// const profiles = [...group1, ...group2, ...group3, ...group4];
-const profiles = group1; //? test purposes
+const profiles = [...group1, ...group2, ...group3, ...group4];
+// const profiles = group1; //? test purposes
 
 // Add isFamily flag to some profiles randomly
 const enhancedProfiles = profiles.map(profile => ({
